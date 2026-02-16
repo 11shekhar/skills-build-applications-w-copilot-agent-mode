@@ -7,7 +7,9 @@ import random
 class Command(BaseCommand):
     help = 'Populate the octofit_db database with test data'
 
+
     def handle(self, *args, **kwargs):
+        print('Creating test data for octofit_db using Djongo...')
         self.stdout.write(self.style.SUCCESS('Starting database population...'))
 
         # Clear existing data

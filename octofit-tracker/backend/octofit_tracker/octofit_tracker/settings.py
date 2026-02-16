@@ -34,6 +34,7 @@ if os.environ.get('CODESPACE_NAME'):
 # Application definition
 
 INSTALLED_APPS = [
+    'djongo',  # MongoDB backend
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'djongo',
     'api',
 ]
 
@@ -78,7 +78,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'octofit_tracker.wsgi.application'
 
 
-# Database
+
+# Database: MongoDB via Djongo
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
