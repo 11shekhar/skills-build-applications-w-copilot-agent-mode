@@ -1,5 +1,4 @@
----
-mode: 'agent'
+agent: 'GPT-4.1'
 model: GPT-4.1
 description: 'Create a Django project, start it, and run it'
 ---
