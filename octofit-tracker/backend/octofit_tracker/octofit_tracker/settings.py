@@ -79,7 +79,10 @@ WSGI_APPLICATION = 'octofit_tracker.wsgi.application'
 
 
 
-# Database: MongoDB via Djongo
+
+# ---
+# DJONGO/MONGODB CONFIGURATION FOR OCTOFIT_DB
+# ---
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {

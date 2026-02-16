@@ -9,7 +9,7 @@ class Command(BaseCommand):
 
 
     def handle(self, *args, **kwargs):
-        print('Creating test data for octofit_db using Djongo...')
+        print('Populating octofit_db using djongo...')
         self.stdout.write(self.style.SUCCESS('Starting database population...'))
 
         # Clear existing data
